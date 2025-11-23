@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjeet Catering Service-Karhal(Mainpuri)</title>
+    <!-- SEO Meta -->
+    <meta name="description"
+        content="Ranjeet Catering Services - Royal taste and premium catering in Karhal Mainpuri. Wedding, Birthday, Corporate Events & Party Catering.">
+    <meta name="keywords"
+        content="Ranjeet Catering, Catering Karhal, Wedding Catering Mainpuri, Party Catering, Royal Taste">
+
+    <link rel="icon" href="img/logo1.png">
+    <!-- css link(external) -->
+    <link rel="stylesheet" href="index.css">
+    <!-- css bootstrap link -->
+    <link rel="stylesheet" href="boot5/css/bootstrap.min.css">
+    <!-- media-queries link -->
+    <link rel="stylesheet" href="media-queris.css">
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <style>
+        .Client-say img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        .Client-say p {
+            font-style: italic;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- -------------------------top-header------------------------- -->
+    <div class="container-fluid top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 logo">
+                    <img src="img/logo3.png" alt="">
+                    <div class="logo-text">
+                        <h3>Ranjeet Catering Services</h3>
+                        <p>Delicious Food | Royal Taste | Best Service</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 icon">
+                    <a href="https://wa.me/919720726704" target="_blank" rel="noopener noreferrer"><img
+                            src="img/icon-logo/whatsapp.png" alt=""></a>
+                    <a href="#"> <img src="img/icon-logo/youtube.png" alt=""></a>
+                    <a href="#"> <img src="img/icon-logo/instagram.png" alt=""></a>
+                    <a href="#"> <img src="img/icon-logo/twitter.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------navbar---------------------------- -->
+    <div class="container-fluid navbar-part">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="Booking.html">Order-Now</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="img/icon-logo/toggel-button.png" alt="" height="30px">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active " href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sarvice.html">Services</a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="manu.html">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="package.html">Best-Offers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ------------------------crousal-slide------------------------ -->
+    <div class="container slide-container my-4">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slide-image/s-1.jpg" class="d-block w-100" style="height:300px;" alt="...">
+                    <div class="carousel-caption  d-md-block" id="carousel-1">
+                        <h5>Welcome to Ranjeet Catering Services</h5>
+                        <p>Delicious Food, Memorable Moments</p>
+                        <button class="slide-btn"><a href="Booking.html">Book-Now</a></button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide-image/slide main.webp" class="d-block w-100" style="height:300px;" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Fresh Ingredients, Authentic Taste</h5>
+                        <p>We bring flavors that make your events unforgettable</p>
+                        <button class="slide-btn"><a href="manu.html">Explore Menu</a></button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide-image/background image 3.jpg" class="d-block w-100" style="height:300px;"
+                        alt="...">
+                    <div class="carousel-caption  d-md-block">
+                        <h5>Perfect for Every Occasion</h5>
+                        <p>Weddings | Birthday Parties | Corporate Events</p>
+                        <button class="slide-btn"><a href="contact.html">Contact Us</a></button>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-------------------Histery of catering sarvices----------------- -->
+    <div class="container Histery">
+        <div class="row">
+            <div class="col-md-3" data-aos="fade-right">
+                <img src="img/histery/histery 1.avif" alt="">
+            </div>
+            <div class="col-md-6 histery-contact" data-aos="fade-down">
+                <h3>Our History</h3>
+                <h2>LOVE FOR FOOD</h2>
+                <hr>
+
+                <p>Ranjeet Catering is a Indian catering service that specializes in providing delicious and authentic
+                    Indian cuisine for various events and occasions. With a strong emphasis on quality and taste,
+                    Ranjeet Catering aims to bring the flavors of India to your table.</p>
+
+                <p>The catering service offers a wide range of South Indian dishes, including traditional favorites like
+                    dosas, idlis, vadas, sambar, rasam, and a variety of chutneys. These dishes are prepared using fresh
+                    ingredients and traditional cooking methods, ensuring an authentic and flavorful experience</p>
+                <!-- <a href="#" class="Histery-button">Content-Us</a> -->
+            </div>
+            <div class=" col-md-3" data-aos="fade-left">
+                <img src="img/histery/histery 1.avif" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------About-Us-------------------------- -->
+    <div class="container About my-3" data-aos="flip-left">
+        <h2>About-Us</h2>
+        <div class="container about-content">
+            <h1>Welcome to Ranjeet Catering Services</h1>
+            <h3>- A Real Diamond of Catering Industry</h3>
+            <p>Looking for a perfect food affair to complement your special occasion? <br>
+                Look no further! Ranjeet Catering Services provide a sumptuous food itinerary to fulfill your each and
+                every catering need. Be it a large, mid or small sized event, our full-range of outdoor and indoor
+                catering services cover complete food preparation and presentation for formal and informal gatherings.
+            </p>
+
+            <p>Ranjeet Catering Sarvices has become the fastest growing on-demand chef service provider in India and
+                offers a spectrum of 15+ cuisines and 500+ dishes ranging from North Indian to South Indian, Chinese,
+                Continental, Italian, Thai, Mexican, Arabic, Live Barbecue and more. It is currently operational in
+                Karhal,
+                Etawah, Mainpuri, Kurawali,Faridabad and several
+                other cities.</p>
+
+            <p>So forget all kitchen and house party hassles and book our services to enjoy with
+                your guests. Visit
+                <a href="https://rcatering.rf.gd/" style="color:white; font-weight:900;">RCatering.rf.gd</a> or Call <b
+                    style="color:white;">9720726704</b>.
+            </p>
+            <a href="about.html" class="about-button">Learn more</a>
+        </div>
+    </div>
+
+    <!-- --------------------------Sarvices-------------------------- -->
+    <div class="container sarvices">
+        <h2>Services-</h2>
+        <div class="row services-boxx1">
+            <div class="col-md-3 box1">
+                <img src="img/sarvices-image/indoor.png" alt="">
+                <h4>Indoor Catering</h4>
+                <h5>Starts ₹ 299 per person</h5>
+                <a href="sarvices-silver-pack.html" class="services-button">Order-Now</a>
+            </div>
+            <div class="col-md-3 box1">
+                <img src="img/sarvices-image/outdor.png" alt="">
+                <h4>Outdoor Catering</h4>
+                <h5>Starts ₹ 399 per person</h5>
+                <a href="gold-pack-item.htm" class="services-button">Order-Now</a>
+
+            </div>
+            <div class="col-md-3 box1">
+                <img src="img/sarvices-image/home.png" alt="">
+                <h4>Home Catering</h4>
+                <h5>Starts ₹299 per person</h5>
+                <a href="sarvices-silver-pack.html" class="services-button">Order-Now</a>
+
+            </div>
+        </div>
+        <!-- our catering services -->
+        <div class="container our-catering-services my-4">
+            <h2>Our-Catering-Services</h2>
+            <div class="row">
+                <div class="services-page">
+                    <div class="services-box-left">
+                        <h3>Ranjeet Catering Services <br>Our-Services</h3>
+                        <ul>
+                            <li><a href="#link1">Marriage-Wedding Catering</a></li>
+                            <li><a href="#link2">Home Catering</a></li>
+                            <li><a href="#link3">Event Catering</a></li>
+                            <li><a href="#link4">Birthday Party Catering</a></li>
+                            <li><a href="#link5">Indoor Catering</a></li>
+                            <li><a href="#link6">Outdoor Catering</a></li>
+                            <li><a href="#link7">Corporate-Office Party Catering</a></li>
+                            <li><a href="#link8">Engagement Catering</a></li>
+                            <li><a href="#link9">Social Function Catering</a></li>
+                            <li><a href="#link10">School-College Function Catering</a></li>
+                            <li><a href="#link11">Kitty Party Catering</a></li>
+                            <li><a href="#link12">Functions In Clubs Catering</a></li>
+                            <li><a href="#link13">Buffet Catering</a></li>
+                            <li><a href="#link14">BBQ Catering</a></li>
+                        </ul>
+                    </div>
+                    <div class="services-box-right" data-aos="fade-down-left">
+
+                        <div class="right-box-content" id="link1">
+                            <h2>Marriage-Wedding Catering</h2>
+                            <div class="img">
+                                <img src="services-categories/m.png" alt="this image is not ">
+                            </div>
+
+                            <p>Shadi ke liye royal aur shandar arrangements – Traditional, Rajasthani, North Indian,
+                                South
+                                Indian, Continental, Chinese aur sabhi cuisines ke options.</p>
+
+                            <a href="wedding-event-page.html" class="services-box-right-button">Leran-more</a>
+                        </div> <br>
+
+                        <div class="right-box-content" id="link2">
+                            <h2>Home Catering</h2>
+                            <div class="img">
+                                <img src="services-categories/H.png" alt="this image is not ">
+                            </div>
+
+                            <p>Ab chhoti gatherings ke liye aapko tension lene ki zarurat nahi. Hum provide karte hain
+                                Home
+                                Catering Services, jismein aapko milega hygienic, fresh aur tasty food – directly aapke
+                                ghar
+                                par.</p>
+
+                            <a href="home-event-page.html" class="services-box-right-button">Leran-more</a>
+                        </div> <br>
+
+                        <div class="right-box-content" id="link3">
+                            <h2>Event Catering</h2>
+                            <div class="img">
+                                <img src="services-categories/E.png" alt="this image is not ">
+                            </div> <br>
+
+                            <p>Anniversaries, Engagements, Kitty Parties aur Cultural Programs ke liye full-service
+                                catering
+                                – from welcome drinks to desserts.</p>
+
+                            <a href="event-catering-page.html" class="services-box-right-button">Leran-more</a>
+                        </div><br>
+
+                        <div class="right-box-content" id="link4">
+                            <h2>Birthday Party Catering</h2>
+                            <div class="img">
+                                <img src="services-categories/B (2).png" alt="this image is not ">
+                            </div>
+
+                            <p>Chhoti gatherings ho ya badi celebration, hum provide karte hain snacks, drinks aur
+                                full-course meals – har age group ke liye special menus.</p>
+
+                            <a href="Baritday-event-page.html" class="services-box-right-button">Leran-more</a>
+                        </div><br>
+
+                        <div class="right-box-content" id="link5">
+                            <h2>Indoor Catering</h2>
+                            <div class="img">
+                                <img src="services-categories/IN.png" alt="this image is not ">
+                            </div>
+
+                            <p>Chhoti aur badi dono tarah ki indoor parties ke liye hum provide karte hain premium
+                                indoor
+                                catering services. Be it banquet halls, hotels ya ghar ke andar celebrations – hum har
+                                jagah
+                                aapke liye delicious food with classy presentation le aate hain.</p>
+                            <a href="indoor-event-page.html" class="services-box-right-button">Leran-more</a>
+                        </div><br>
+
+                        <div class="right-box-content" id="link6">
+                            <h2>Outdoor Catering</h2>
+                            <div class="img">
+                                <img src="services-categories/OUT.png" alt="this image is not ">
+                            </div>
+
+                            <p>Large gatherings, destination weddings ya open-air parties ke liye hum provide karte hain
+                                premium outdoor catering services, jahan taste aur presentation dono ka perfect
+                                combination
+                                hota hai.</p>
+
+                            <a href="outdoor-event-page.html" class="services-box-right-button">Leran-more</a>
+                        </div><br>
+
+                        <div class="right-box-content" id="link7">
+                            <h2>Corporate-Office Party Catering</h2>
+                            <div class="img">
+                                <img src="services-categories/COR.png" alt="this image is not ">
+                            </div>
+
+                            <p>Meetings, Conferences, Product Launch aur Office Parties ke liye professional & hygienic
+                                catering service. Customized menu aur quick service facility.</p>
+
+                            <a href="corprote-event-page.html" class="services-box-right-button">Leran-more</a>
+                        </div><br>
+
+                        <div class="right-box-content" id="link8">
+                            <h2>Engagement Catering</h2>
+                            <div class="img">
+                                <img src="services-categories/ENGEGEMENT.png" alt="this image is not ">
+                            </div>
+
+                            <p>Engagement ek special occasion hota hai jahan do parivaar ek dusre se jude hote hain. Is
+                                din
+                                ko aur memorable banane ke liye hum provide karte hain premium catering services – jisme
+                                taste, style aur presentation sab kuch perfect hota hai.</p>
+
+                            <a href="engeegment-event-page.html" class="services-box-right-button">Leran-more</a>
+                        </div><br>
+
+                        <div class="right-box-content" id="link9">
+                            <h2>Social Function Catering</h2>
+                            <div class="img">
+                                <img src="services-categories/SOCIAL.png" alt="this image is not ">
+                            </div>
+
+                            <p>Har social function ka maza tabhi aata hai jab khana swadisht ho aur arrangements
+                                perfect.
+                                Hum provide karte hain Social Function Catering Services jo har celebration ko memorable
+                                banati hai.</p>
+
+                            <a href="Social Function-event-page.html" class="services-box-right-button">Leran-more</a>
+                        </div><br>
+
+                        <div class="right-box-content" id="link10">
+                            <h2>School-College Function Catering</h2>
+                            <div class="img">
+                                <img src="services-categories/COLLEGE.png" alt="this image is not ">
+                            </div>
+
+                            <p>School aur college ke events hamesha yaadgar hote hain – chahe Annual Day ho, Fresher’s
+                                Party, Farewell, Sports Meet ya Cultural Program. Humari specialized catering services
+                                in
+                                functions ko banati hain aur bhi exciting aur memorable.</p>
+
+                            <a href="School-College Function -event-page.html"
+                                class="services-box-right-button">Leran-more</a>
+                        </div><br>
+
+                        <div class="right-box-content" id="link11">
+                            <h2>Kitty Party Catering</h2>
+                            <div class="img">
+                                <img src="services-categories/KITTY.png" alt="this image is not ">
+                            </div>
+
+                            <p>Kitty party ka asli maza tabhi aata hai jab swadisht khana aur stylish presentation ho.
+                                Hum
+                                provide karte hain special catering services for kitty parties, jismein taste, variety
+                                aur
+                                elegance ka perfect blend hota hai.</p>
+
+                            <a href="Kitty Party -event-page.html" class="services-box-right-button">Leran-more</a>
+                        </div><br>
+
+                        <div class="right-box-content" id="link12">
+                            <h2>Functions In Clubs Catering</h2>
+                            <div class="img">
+                                <img src="services-categories/CLUB.png" alt="this image is not ">
+                            </div>
+
+                            <p>Club functions ek stylish aur elegant atmosphere create karte hain – aur humari
+                                specialized
+                                catering services us atmosphere ko banati hain aur bhi khaas. Chahe corporate meet ho,
+                                music
+                                night ya social gathering, hum serve karte hain taste, variety aur premium presentation.
+                            </p>
+
+                            <a href="function-school-cllubs-event-page.html"
+                                class="services-box-right-button">Leran-more</a>
+                        </div><br>
+
+                        <div class="right-box-content" id="link13">
+                            <h2>Buffet Catering</h2>
+                            <div class="img">
+                                <img src="services-categories/BUFFET.png" alt="this image is not ">
+                            </div>
+
+                            <p>Buffet ek aisa style hai jo har celebration ko grand banata hai. Hum provide karte hain
+                                multi-cuisine buffet catering jisme har guest ko milta hai apne taste ke hisaab se
+                                swadisht
+                                khana aur stylish presentation.</p>
+
+                            <a href="buffet-event-page.html" class="services-box-right-button">Leran-more</a>
+                        </div> <br>
+
+                        <div class="right-box-content" id="link14">
+                            <h2>BBQ Catering</h2>
+                            <div class="img">
+                                <img src="services-categories/BBQ.png" alt="this image is not ">
+                            </div>
+
+                            <p>Chahe outdoor party ho, wedding celebration ya corporate event – BBQ Catering har
+                                gathering
+                                ko banata hai exciting aur flavorful. Hum provide karte hain live BBQ stations jahan
+                                aapke
+                                guests enjoy karte hain freshly grilled delicacies.</p>
+
+                            <a href="BBQ-event-page.html" class="services-box-right-button">Leran-more</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------meet tha chef----------------------- -->
+    <div class="container meet-tha-chef my-3">
+        <div class="row page-2">
+            <div class="col-md-4">
+                <img src="img/onerm.jpg" alt="photo">
+            </div>
+            <div class="col-md-8 chef-info">
+                <h2>👨‍🍳 Meet The Chef</h2>
+                <h3>Chef Ranjeet Kumar — The Heart Behind Every Flavor</h3>
+                <p>
+                    At <strong>Ranjeet Catering Services</strong>, every dish is crafted with love, tradition, and
+                    passion —
+                    all inspired by our head chef, <strong>Ranjeet Kumar</strong>.
+                    With over a decade of experience in Indian cuisine, Chef Ranjeet believes that
+                    <em>“Food is not just to fill stomachs, it’s to fill hearts.”</em>
+                </p>
+
+                <p>
+                    From small family gatherings to grand weddings, Chef Ranjeet personally ensures that
+                    every plate served carries a perfect balance of taste, aroma, and presentation.
+                    His secret ingredients? <strong>Freshness, authenticity, and emotion.</strong>
+                </p>
+
+                <p>
+                    He started his journey from a small kitchen, where flavors met dreams.
+                    Today, he leads one of the most loved catering teams in the city —
+                    known for transforming ordinary events into unforgettable culinary experiences.
+                </p>
+
+                <p class="quote">
+                    “Cooking is my way of spreading happiness — one meal at a time.” 🍛
+                </p>
+
+                <div class="signature">— Chef Ranjeet Singh</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------How it Works----------------------- -->
+    <div class="container How-it-Works my-3" data-aos="zoom-in">
+        <h2>How it Works</h2>
+        <h4>So How Does Catering Corner Process Work?</h4>
+
+        <div class="work-box">
+            <div class="boxx" data-aos="fade-up" data-aos-duration="3000">
+                <img src="img/how-it-work image/pro1.png" alt="">
+                <h6>Choose a Service Category</h6>
+                <p>Select the type of catering service you are looking for</p>
+            </div>
+            <div class="boxx" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <img src="img/how-it-work image/pro2.png" alt="">
+                <h6>Select your Location</h6><br>
+                <p>Select Your city to find best local caterers</p>
+            </div>
+            <div class="boxx" data-aos="fade-up" data-aos-duration="3000">
+                <img src="img/how-it-work image/pro3.png" alt="">
+                <h6>Check Caterers Reviews and Ratings</h6>
+                <p>Check Our Verified Reviews and rating of Catering Companies</p>
+            </div>
+            <div class="boxx" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <img src="img/how-it-work image/pro4.png" alt="">
+                <h6>Contact the Best Caterer</h6> <br>
+                <p>Select menu and contact Caterers </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------oue Client-say--------------------- -->
+    <div class="container my-3 Client-say" data-aos="zoom-in-up">
+        <h2>Our Client-Say</h2>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators" id="carouselIndicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            </div>
+
+            <div class="carousel-inner client" id="carouselInner">
+                <!-- Default testimonial -->
+                <div class="carousel-item active">
+                    <p>Ranjeet Caterers is simply the best! Not just their food was top grade but the entire
+                        arrangements were perfect.</p>
+                    <img src="img/oner.jpg" alt="logo">
+                    <div class="right">
+                        <h6>- Mr. Harakhchand Gangar</h6>
+                        <p>Mayka Textiles</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- --------------------address-------------------- -->
+    <div class="container Address-box">
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Office Address</h1>
+                <p>Pappu Member Aara Machine Ke Pass,Mohalla Bhatela Karhal,mainpuri,<br> Mainpuri road
+                    karhal,U.P-205264</p>
+                <p>Phone:+91-9720726704</p>
+                <a href="contact.html" class="contact-button extra"> Get Direction</a>
+            </div>
+
+            <div class="col-md-1 contact-hr">
+                <hr class="hr">
+            </div>
+
+            <div class="col-md-5 contact-box2">
+                <hr class="right-hr">
+                <h1>Kitchen Address</h1>
+
+                <p>Royal Sweet House karhal,mainpuri,
+                    <br> Mainpuri road karhal,U.P-205264
+                </p>
+                <p>Phone:+91-9720726704</p>
+                <a href="contact.html" class="contact-button"> Get Direction</a>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <!-- -----------------marquee tag footer----------------- -->
+    <div class="container-fluid footer-marquee my-4">
+        <marquee behavior="2" direction="left"> .Home Catering . Birthday Party Catering .
+            Engagement Catering . Indoor Catering . Outdoor Catering .Kitty Party Catering . Event party Catering .
+            Buffet Catering .College-School-Function Catering</marquee>
+    </div>
+
+    <!-------------------------- footer------------------------ -->
+    <div class="container-fluid footer">
+        <div class="container">
+
+            <div class="icon1">
+                <div class="icon-box"><a href="https://wa.me/919720726704" target="_blank"
+                        rel="noopener noreferrer"><img src="img/icon-logo/whatsapp.png" alt=""></a></div>
+                <div class="icon-box"><a href=""><img src="img/icon-logo/youtube.png" alt=""></a></div>
+                <div class="icon-box"><a href=""> <img src="img/icon-logo/instagram.png" alt=""></a></div>
+                <div class="icon-box"><a href=""><img src="img/icon-logo/twitter.png" alt=""></a></div>
+            </div>
+
+            <div class="footer-text">
+                <h3>Because we at Ranjeet Catering Services know you don't want to regret saying ‘Oh! I could have eaten
+                    a bit more...’</h3>
+            </div>
+
+
+        </div>
+
+        <div class="row footer-content">
+            <div class="col-md-7">
+                <h5>2025 Ranjeet Catering Services - All Rights Reserved</h5>
+            </div>
+            <div class="col-md-5">
+                <p>Designed & Developed By:-Er.Vishesh Kumar</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- =----------------------popup-box=--------------------- -->
+    <div class="popup-overlay" id="popup">
+        <div class="popup-box">
+            <img src="img/logo3.png" alt="">
+            <h2>Welcome to Ranjeet Catering Services <br>🎉</h2>
+            <p>“Swadisht aur hygienic bhojan ke saath hum aapki har party, shadi, aur event ko yaadgaar banate hain. Aaj
+                hi booking karein!”</p>
+            <h3 class="text-red" style="color: white;">🎉 Special Offer 🎉</h3>
+            <p>Book your catering today & get <span class="text-gold fw-bold">10% OFF!</span></p>
+
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+    <!-- side button -->
+    <a href="feedback.html" class="feedback-btn"> <img src="img/icon-logo/feedback.png" alt="" height="20px">
+        Feedback</a>
+    <a href="#" class="top-up-button"><img src="img/icon-logo/top.png" alt="" height="40px"></a>
+
+    <!-- js link -->
+    <script src="boot5/js/bootstrap.min.js"></script>
+
+    <!-- popup-box js -->
+    <script>
+        // Page load hone par popup show ho
+        window.onload = function () {
+            document.getElementById("popup").style.display = "flex";
+        }
+
+        // Close button click karne par popup band ho
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+
+    <!-- Firebase Script -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCOBje9G1lp_7K4L1rkFswCFbIquoNsMoA",
+            authDomain: "rcatering-4b96d.firebaseapp.com",
+            databaseURL: "https://rcatering-4b96d-default-rtdb.firebaseio.com/",
+            projectId: "rcatering-4b96d",
+            storageBucket: "rcatering-4b96d.appspot.com",
+            messagingSenderId: "591231949513",
+            appId: "1:591231949513:web:4dbdc059a9068ba471cb18"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+
+        const carouselInner = document.getElementById("carouselInner");
+        const carouselIndicators = document.getElementById("carouselIndicators");
+
+        const feedbackRef = ref(db, "feedbacks");
+        onValue(feedbackRef, (snapshot) => {
+            const data = snapshot.val();
+            carouselInner.innerHTML = "";
+            carouselIndicators.innerHTML = "";
+
+            if (data) {
+                const feedbacks = Object.values(data);
+                feedbacks.forEach((item, index) => {
+                    const activeClass = index === 0 ? "active" : "";
+                    const indicator = `<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${index}" class="${activeClass}"></button>`;
+                    const feedbackHTML = `
+          <div class="carousel-item ${activeClass}">
+            <p>${item.feedback}</p>
+            <img src="${item.profile}" alt="client" style="width:80px;height:80px;border-radius:50%;">
+            <div class="right">
+              <h6>- ${item.name}</h6>
+              <p>${item.company}</p>
+            </div>
+          </div>
+        `;
+                    carouselIndicators.innerHTML += indicator;
+                    carouselInner.innerHTML += feedbackHTML;
+                });
+            }
+        });
+    </script>
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

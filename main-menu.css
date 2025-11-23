@@ -1,0 +1,188 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+
+}
+
+header {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 4px solid rgb(248, 173, 12);
+    border-top: 4px solid rgb(248, 173, 12);
+    text-shadow: 0 0 5px rgba(249, 200, 4, 0.878);
+}
+
+.print-logo {
+    display: none;
+}
+
+.customer-info {
+    box-shadow: 0 0 15px rgb(47, 34, 1);
+    margin: 20px auto;
+    background: transparent;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.customer-info label {
+    color: white;
+    font-weight: 500;
+}
+
+.customer-info input {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid rgb(233, 133, 26);
+    color: rgb(236, 234, 234);
+    outline: transparent;
+    padding: 2px 10px;
+    width: 19%;
+}
+
+.customer-info input::placeholder {
+    color: rgb(197, 194, 194);
+}
+
+.customer-info h4 {
+    color: darkgray;
+    padding: 10px;
+}
+
+.menu-page {
+    display: none;
+    max-width: 900px;
+    margin: 20px auto;
+    background: linear-gradient(34deg, #2c3e50, #b08d57);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-page.active {
+    display: block;
+}
+
+.section-title{
+    color:white;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    color: rgb(194, 192, 192) !important;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+ button {
+    background: linear-gradient(90deg, #182029, #845b1e);
+    color: white;
+    border: none;
+    border-radius:5px;
+    padding:5px 8px;
+    cursor: pointer;
+    border:1px solid white;
+}
+.print-header-text p{
+    color:white;
+    font-weight:500;
+    font-size:12px;
+    margin-top:-10px;
+}
+.print-section {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.thanks-msg {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 25px;
+    color: #ebe5e5;
+}
+
+#total{
+    color:white;
+    font-weight:700;
+}
+
+/* PRINT VIEW */
+@media print {
+    body {
+        background: white;
+        color: black;
+        padding: 20px;
+    }
+
+    h2{
+        margin-left:20% !important;
+    }
+
+    header {
+        background: none;
+        color: #a00000;
+        border-bottom: 2px solid #d4af37;
+        padding-bottom: 5px;
+    }
+
+    .navigation,
+    .print-section,
+    .customer-info input,
+    input[type="checkbox"] {
+        display: none !important;
+    }
+
+    .menu-page {
+        display: block !important;
+        border: none;
+        box-shadow: none;
+    }
+
+    .menu-item {
+        display: none;
+    }
+
+    .menu-item.selected {
+        display: flex !important;
+        justify-content: space-between;
+        border-bottom: 1px dotted #ccc;
+        padding: 5px 0;
+        margin-left:20px;
+    }
+
+    .print-summary {
+        text-align: left;
+        margin: 15px 0 25px 0;
+        border-bottom: 2px solid #d4af37;
+        padding-bottom: 10px;
+    }
+
+    #total {
+        display: block !important;
+        text-align: right;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        border-top: 2px solid #d4af37;
+        padding-top: 10px;
+         text-align: center;
+    }
+
+    .thanks-msg {
+        display: block !important;
+        text-align: center;
+        color: #a00000;
+        font-size: 1.1rem;
+        margin-top: 40px;
+        border-top: 2px solid #d4af37;
+        padding-top: 10px;
+    }
+}

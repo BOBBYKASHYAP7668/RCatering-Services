@@ -1,0 +1,1632 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(34deg, #2c3e50, #b08d57);
+    overflow-x: hidden;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 0 5px rgba(241, 195, 9, 0.865);
+}
+
+.feedback-btn {
+    position: fixed;
+    top: 55%;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid rgb(235, 150, 2);
+    padding: 5px 6px;
+    border-radius: 5px;
+    left: -40px;
+    transition: .4s;
+    transform: rotate(270deg);
+    background-color: rgba(244, 163, 11, 0.757);
+    color: white;
+
+    &:hover {
+        color: black;
+        background-color: transparent;
+    }
+}
+
+.top-up-button {
+    border: 2px solid black;
+    position: fixed;
+    bottom: 20px;
+    border-radius: 5px;
+    right: 0;
+    mix-blend-mode: color-burn;
+}
+
+/* ----------------------------------scroller style----------------------------------  */
+
+/* Scrollbar ki width */
+::-webkit-scrollbar {
+    width: 5px;
+    margin-right: 20px;
+}
+
+/* Scrollbar ka track (background) */
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+/* Scrollbar ka thumb (jo move hota hai) */
+::-webkit-scrollbar-thumb {
+    background: #f0b050bc;
+    border-radius: 10px;
+}
+
+/* Jab hover ho */
+::-webkit-scrollbar-thumb:hover {
+    background: #f0aa04;
+}
+
+/* ==================================================================================================================== */
+/* ----------------------top-header---------------------- */
+.top-header {
+    background: linear-gradient(35deg, #b08d57, #2c3e50);
+    box-shadow: 0 0 5px white;
+    padding: 5px 0px;
+    position: sticky;
+    top: 2px;
+    z-index: 90;
+}
+
+.logo img {
+    border-radius: 50%;
+    height: 50px;
+}
+
+.icon {
+    text-align: right;
+    align-content: center;
+}
+
+.icon img {
+    transition: .5s;
+    margin-right: 10px;
+    height: 40px;
+}
+
+.icon img:hover {
+    transform: scale(1.1);
+}
+
+.logo-text {
+    color: #291902;
+    line-height: 0px;
+    margin-top: -40px;
+    margin-left: 60px;
+}
+
+.logo-text h3 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.logo-text p {
+    font-size: 10px;
+    font-weight: 700;
+    color: #291800;
+}
+
+/* ==================================================================================================================== */
+/* ----------------------navbar---------------------- */
+.navbar-part {
+    background: linear-gradient(34deg, #2c3e50, #b08d57);
+    margin-top: 3px;
+}
+
+.navbar-toggler {
+    background: linear-gradient(90deg, #182029, #845b1e);
+}
+
+.navbar-brand {
+    color: rgb(248, 248, 248);
+    font-weight: 600;
+
+    &:hover {
+        color: rgb(231, 166, 44);
+    }
+}
+
+.navbar-part .collapse .navbar-nav {
+    margin-left: 100px;
+}
+
+.navbar-part .collapse .navbar-nav .nav-item {
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.navbar-part .collapse .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-weight: 700;
+    transition: .4s;
+    border: 2px solid transparent;
+}
+
+.navbar-part .collapse .navbar-nav .nav-item .active {
+    color: rgb(231, 166, 44);
+}
+
+.navbar-part .collapse .navbar-nav .nav-item .nav-link:hover {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    box-shadow: 0 0 2px gray;
+    color: rgb(231, 166, 44);
+}
+
+/* ==================================================================================================================== */
+/* ------------------------------slide------------------------------ */
+.slide-container {
+    width: 100%;
+    border: 1px solid white;
+    box-shadow: 0 0 5px;
+    border-radius: 10px;
+}
+
+.slide-btn {
+    padding: 7px 15px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid rgb(236, 235, 234);
+    transition: .5s;
+    &:hover {
+        box-shadow: 0 0 5px;
+    }
+}
+
+.slide-btn a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        color: rgb(226, 145, 4);
+    }
+}
+
+/* slider-1 */
+#carousel-1 {
+    margin: 40px 0px;
+    float: left;
+    margin-left: 180px;
+}
+
+#carousel-1 h5 {
+    font-size: 25px;
+}
+
+#carousel-1 p {
+    font-size: 22px;
+}
+
+/* slider */
+.carousel-caption {
+    margin: 0px 0;
+}
+
+.carousel-caption h5 {
+    font-size: 35px;
+}
+
+.carousel-caption p {
+    font-size: 20px;
+}
+
+/* ==================================================================================================================== */
+/* ---------------------histery--------------------- */
+.Histery {
+    background: linear-gradient(34deg, #2c3e50, #b08d57);
+    padding: 10px 0px;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 0 0 5px;
+}
+
+.Histery img {
+    width: 215px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.histery-contact {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 20px;
+    box-shadow: 0 0 5px;
+}
+
+.histery-contact h3 {
+    color: white;
+}
+
+.histery-contact h2 {
+    font-weight: 700;
+    color: white;
+}
+
+.histery-contact p {
+    color: rgb(217, 206, 206);
+}
+
+.Histery-button {
+    text-decoration: none;
+    border: 3px solid white;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    transition: .7s;
+}
+
+.Histery-button:hover {
+    color: black;
+    background-color: white;
+    border: 3px solid;
+}
+
+/* ==================================================================================================================== */
+/* --------------------------About-Us-------------------------- */
+.About {
+    height: auto;
+    background: linear-gradient(35deg, #b08d57, #2c3e50);
+    /* border: 1px solid; */
+    box-shadow: 0 0 5px;
+
+}
+
+.about-content {
+    border-radius: 20px;
+    margin: 10px;
+    height: auto;
+    text-align: center;
+    border: 1px solid white;
+    padding: 20px;
+    box-shadow: 0 0 5px;
+}
+
+.about-content h1 {
+    color: white;
+    text-shadow: 0 0 5px orange;
+}
+
+.about-content h3 {
+    color: rgb(255, 251, 251);
+}
+
+.about-content p {
+    color: rgb(217, 206, 206);
+}
+
+.about-button {
+    text-decoration: none;
+    border: 3px solid white;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    transition: .7s;
+}
+
+.about-button:hover {
+    color: white;
+    background-color: rgb(162, 156, 156);
+    border: 3px solid rgb(14, 14, 14);
+}
+
+/* ==================================================================================================================== */
+/* -----------------------------services-----------------------------  */
+.sarvices {
+    box-shadow: 0 0 5px;
+    padding: 20px 0px;
+}
+
+.box1 {
+    box-shadow: 0px 0px 5px gray;
+    transition: .5s;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center !important;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.sarvices .box1 img {
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.box1 h4 {
+    color: white;
+    padding: 10px;
+}
+
+.box1 h5 {
+    color: rgb(217, 206, 206);
+    margin-top: -10px;
+}
+
+.services-button {
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    margin: 0px 25%;
+    padding: 5px 10px;
+    border: 2px solid white;
+    transition: .5s;
+}
+
+.services-button:hover {
+    background-color: rgb(241, 241, 241);
+    outline: 2px solid black;
+    color: black;
+}
+
+/* ==================================================================================================================== */
+/* -------------our catering sarvices------------- */
+.our-catering-services {
+    background: linear-gradient(35deg, #b08d57, #2c3e50);
+    box-shadow: 0 0 5px;
+    border-radius: 10px;
+    margin: 2px auto;
+    padding-top:10px;
+    color: rgb(214, 213, 213);
+    height: auto;
+    margin-bottom:0px !important;
+
+}
+
+.services-boxx1 {
+    margin-bottom: 10px !important;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.services-page {
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.services-box-left {
+    border-radius: 20px;
+    border: 2px solid rgba(106, 74, 5, 0.709);
+    width: 40%;
+    overflow-y: scroll;
+}
+
+.services-box-left h3 {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px 0px;
+    color: white;
+    font-weight: bold;
+}
+
+.services-box-left ul li {
+    margin-left: 20px;
+    line-height: 28px;
+    color: white;
+}
+
+.services-box-left ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.services-box-right {
+    border-radius: 20px;
+    border: 2px solid rgba(106, 74, 5, 0.709);
+    width: 60%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.img img {
+    mix-blend-mode: color-burn !important;
+    margin: 5px auto;
+    height: 150px;
+    width: 150px;
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+}
+
+.right-box-content p {
+    padding: 16px;
+}
+
+.services-box-right-button {
+    border: 3px solid white;
+    padding: 3px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: .7s;
+
+    &:hover {
+        border: 3px solid black;
+        background-color: rgba(255, 255, 255, 0.388);
+        color: black;
+    }
+}
+
+/* ==================================================================================================================== */
+/* -------------------------------------meet tha chef -------------------------------------*/
+.meet-tha-chef {
+    box-shadow: 0 0 5px;
+    background: linear-gradient(34deg, #2c3e50, #b08d57);
+}
+
+.page-2 {
+    box-shadow: 0px 0px 1px gray;
+    transition: .5s;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.page-2 img {
+    height: 200px;
+    width: 60%;
+    margin-left: 20px !important;
+    margin-top: 40% !important;
+    border-radius: 20px;
+    border: 2px solid lightblue;
+    transition: .7s;
+    box-shadow: 0 0 5px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.chef-info h2 {
+    color: #f8f6f6;
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+
+.chef-info h3 {
+    font-size: 1.3rem;
+    color: rgb(51, 50, 50);
+    margin-bottom: 15px;
+}
+
+.chef-info p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #e2dfdf;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.quote {
+    font-style: italic;
+    color: #b30000;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.signature {
+    margin-top: 10px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.3rem;
+    color: #d4af37;
+    text-align: right;
+}
+
+
+
+/* ==================================================================================================================== */
+/* ----------------------------------How it Works---------------------------------- */
+.How-it-Works {
+    background: linear-gradient(35deg, #2c3e50);
+    text-align: center;
+    box-shadow: 0 0 5px;
+    padding-bottom: 20px;
+}
+
+.How-it-Works h4 {
+    color: white;
+}
+
+.work-box {
+    box-shadow: 0 0 5px;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+
+
+.boxx {
+    transition: .6s;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    width: 22%;
+    text-align: center;
+    border: 1px solid rgb(114, 112, 112);
+
+}
+
+.boxx:hover {
+    transform: scale(1.1);
+}
+
+
+.boxx img {
+    margin: 10px 0;
+    /* border:1px solid ; */
+    border-radius: 30%;
+    padding: 20px;
+    mix-blend-mode: color-burn;
+    height: 100px;
+
+}
+
+.boxx h6 {
+    color: white;
+    padding: 5px;
+}
+
+.boxx p {
+    color: rgb(217, 206, 206);
+    padding: 5px;
+}
+
+/* ==================================================================================================================== */
+/* ----------------------------our client say---------------------------- */
+.Client-say {
+    background: linear-gradient(35deg, #b08d57, #2c3e50);
+    padding: 20px;
+}
+
+.slide .client {
+    border-radius: 20px;
+    box-shadow: 0 0 5px;
+    height: auto;
+    width: 70%;
+    margin: 10px auto;
+    border: 2px solid gray;
+}
+
+.slide .client .carousel-item p {
+    padding: 15px;
+    text-align: justify;
+    color: rgb(249, 244, 244);
+}
+
+.slide .client .carousel-item img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 40%;
+}
+
+.slide .client .carousel-item .right {
+    float: right;
+    color: white;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.slide .client .carousel-item .right p {
+    margin-top: -20px;
+}
+
+/* ==================================================================================================================== */
+/* ----------------------addrss---------------------- */
+.Address-box {
+    padding: 5px;
+    box-shadow: 0 0 2px white;
+}
+
+.contact .left span {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 30px;
+    color: rgb(35, 1, 1);
+}
+
+.contact .left p {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    text-align: center;
+    font-size: 20px;
+    color: rgba(42, 3, 3, 0.671);
+}
+
+.Address-box .contact-button {
+    margin-left: 170px;
+}
+
+.contact-hr .hr {
+    width: 10px;
+    height: 200px;
+}
+
+.Address-box h1 {
+    border-bottom: 2px solid rgb(182, 178, 178);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.Address-box hr {
+    color: rgb(243, 238, 238);
+}
+
+.Address-box p {
+    text-align: center;
+    color: white;
+}
+
+.Address-box b {
+    text-align: center;
+    color: white;
+}
+
+.right-hr {
+    display: none;
+}
+
+/* ==================================================================================================================== */
+/* --------------------marquee tag-------------------- */
+.footer-marquee {
+    background: linear-gradient(35deg, #b08d57, #2c3e50);
+    margin: 10px;
+}
+
+.footer-marquee marquee {
+    color: white;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+/* ==================================================================================================================== */
+/* --------------------footer-------------------- */
+.footer {
+    background: linear-gradient(35deg, #2c3e50, #b08d57);
+}
+
+.icon1 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.icon1 .icon-box {
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    background-color: white;
+    text-align: center;
+    align-content: center;
+    transition: .5s;
+}
+
+.icon1 .icon-box img {
+    height: 30px;
+    width: 30px;
+    transition: 1s;
+}
+
+.icon1 .icon-box:hover {
+    background-color: transparent;
+}
+
+.icon1 .icon-box img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px white;
+    border-radius: 50px;
+}
+
+.footer-text {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.footer-content {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.footer-content h5 {
+
+    font-size: 20px;
+    line-height: 50px;
+    padding-top: 20px;
+}
+
+.footer-content p {
+    padding-top: 20px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+/* =========================index page end========================= */
+/* //////////////////////////////////////////////////////////////// */
+/* ==================================================================================================================== */
+/* --------------------------------------------------------------- */
+/* ==========================about page========================== */
+.card-img {
+    box-shadow: 0 0 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.our-services {
+    background: linear-gradient(35deg, #2c3e50, #b08d57);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+    color: rgb(217, 206, 206);
+}
+
+.our-vision {
+    mix-blend-mode: color-burn;
+    height: 300px;
+}
+
+.text {
+    margin-top: 40px !important;
+
+}
+
+.TEEM {
+    box-shadow: 0 0 5px;
+    background: linear-gradient(35deg, #b08d57, #2c3e50, #b08d57);
+    color: rgb(217, 206, 206);
+    text-align: center;
+}
+
+.TEEM .my-teem {
+    margin: 0px 4%;
+}
+
+.founder {
+    margin: 0px 25%;
+}
+
+.our-teem {
+    margin: 0px auto;
+}
+
+.img1 img {
+    height: 170px;
+    width: 170px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.img1 h4 {
+    margin-top: 20px;
+    color: #0c0800;
+}
+
+.img1 p {
+    color: #0c0800;
+}
+
+.img1 {
+    transition: .5s;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    height: 290px;
+    width: 210px;
+    border: 2px solid rgb(244, 240, 240);
+    background: linear-gradient(35deg, #b08d57, #2c3e50, );
+    padding: 5px;
+
+    &:hover {
+        transform: scale(1.1);
+        background-color: rgba(171, 147, 101, 0.635);
+    }
+}
+
+/* -------------------------------------------------------------------- */
+/* ==================================================================================================================== */
+/* -----------------------Sarvices page starts----------------------- */
+.other-services {
+    box-shadow: 0 0 5px;
+    background: linear-gradient(#b08d57, #2c3e50, #b08d57);
+    color: rgb(217, 206, 206);
+    padding: 10px;
+}
+
+.services-text h3 {
+    color: #ffffff;
+}
+
+.services-img img {
+    height: 250px;
+    width: 90%;
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0.3;
+    transition: .5s;
+    box-shadow: 0 0 5px;
+    margin: 0px 10px !important;
+
+    &:hover {
+        transform: translateX(45deg);
+        opacity: 0.9;
+        border-radius: 20px;
+    }
+}
+
+.pack {
+    margin: 20px 0;
+    box-shadow: 0 0 5px;
+}
+
+.pack h1 {
+    text-align: center;
+    color: white;
+    /* text-decoration: underline; */
+    margin: 20px;
+}
+
+.pack1 {
+    box-shadow: 0 0 5px;
+}
+
+.pack1 h4 {
+    margin-top: 15px;
+    color: white;
+}
+
+.pack1 p {
+    color: rgb(197, 194, 194);
+}
+
+.pack-content {
+    color: rgb(217, 206, 206);
+}
+
+.pack-content-image img {
+    height: 200px;
+    width: 120px;
+    mix-blend-mode: color-burn;
+}
+
+.pack-content-image1 img {
+    height: 190px;
+}
+
+.Sarvices-pack-btn {
+    padding: 5px 10px;
+    margin: 30px 34%;
+    border-radius: 20px;
+    border: 3px solid white;
+    background-color: transparent;
+    transition: 5s !important;
+
+    &:hover {
+        background-color: white;
+        border: 3px solid black;
+    }
+}
+
+.Sarvices-pack-btn a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        color: black;
+        font-weight: bold;
+    }
+}
+
+.btn1 {
+    margin-top: 55px;
+}
+
+/* -------------------------------------------------------------------- */
+/* ==================================================================================================================== */
+/* -------------------------manu page starts-------demo menu------------------ */
+
+.manu {
+    background: linear-gradient(35deg, #2c3e50, #b08d57, #2c3e50, #dabd9ad5);
+    padding: 20px;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+.mau-container {
+    box-shadow: 0 0 25px rgb(119, 117, 117);
+}
+
+.manu .col {
+    background: linear-gradient(45deg, #2c3e50, #dabd9ad5);
+}
+
+.manu .manu1 img {
+    mix-blend-mode: color-burn;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.manu .manu1 span {
+    color: rgba(247, 250, 247, 0.917);
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.manu1 ul {
+    list-style: none;
+    margin-left: 30px !important;
+}
+
+.manu1 ul li {
+    color: rgb(225, 220, 220) !important;
+}
+
+.counter-text {
+    font-size: 15px !important;
+}
+
+/* -------------------------------------------------------------------- */
+/* =================================================================== */
+/* ----------------------Best--pack page starts---------------------- */
+.heading {
+    background: linear-gradient(45deg, #2c3e50, #f3bb77d5, #2c3e50);
+    margin: 10px 0px;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+    color: white;
+    font-weight: bold !important;
+}
+
+
+
+.item-box {
+    border-radius: 20px;
+    box-shadow: 0 0 5px;
+    margin: 10px !important;
+}
+
+.item-box h2 {
+    font-size: 25px;
+}
+
+.package-item-box {
+    border: 5px double rgb(148, 110, 57);
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 5px;
+}
+
+.pack-head {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.item-content {
+    padding: 20px 10px;
+    box-shadow: 0 0 3px;
+    font-size: 20px;
+}
+
+.btn5 {
+    margin: 20px 28%;
+    padding: 2px 5px;
+    border-radius: 20px;
+    transition: .7s;
+    border: 2px solid rgba(234, 135, 29, 0.743);
+    background-color: rgba(124, 92, 58, 0.541);
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.btn5 a {
+    color: rgb(242, 242, 242);
+    font-size: 20px;
+    padding: 2px 3px;
+    text-decoration: none;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.item-content ol {
+    line-height: 30px;
+    color: rgb(207, 205, 207);
+}
+
+/* -------------------------------------------------------------------- */
+/* =================================================================== */
+/* -----------------------Contact  page starts----------------------- */
+.contact {
+    background: linear-gradient(45deg, #dabd9ad5, #2c3e50);
+    box-shadow: 0 0 5px;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(224, 222, 222);
+}
+
+#button {
+    height: 30px;
+    width: 150px;
+    background-color: rgb(93, 96, 90);
+    border-radius: 40%;
+
+}
+
+.contact .left span {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: rgb(252, 247, 247);
+    margin-top: 10px;
+}
+
+.contact .left p {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(224, 222, 222);
+}
+
+.map iframe {
+    border-radius: 20px;
+    height: 450px;
+    width: 97%;
+    border: 2px solid;
+}
+
+/* -------------------------------------------------------------------- */
+/* =================================================================== */
+/* -----------------------Booking page starts----------------------- */
+.book .left {
+    background: linear-gradient(45deg, #dabd9ad5, #2c3e50);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 0 0 5px;
+    padding: 20px 0;
+}
+
+.book .left input,
+select {
+    width: 350px;
+    height: 30px;
+    border-radius: 30px;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 5px solid rgb(25, 24, 24);
+    background-color: #e9d6acb5;
+    color: rgb(8, 0, 0);
+}
+
+.book .left label {
+    color: rgb(248, 246, 246);
+    font-size: 25px;
+}
+
+.book .left .btn3 {
+    height: 30px;
+    width: 100px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    margin: 10px 35%;
+    border-radius: 30px;
+
+    &:hover {
+        background-color: white;
+    }
+}
+
+.login span {
+    color: rgb(106, 4, 4);
+}
+
+.book .right {
+    margin: 10% 0;
+}
+
+.book .right img {
+    mix-blend-mode: color-burn;
+    margin-left: 50px;
+}
+
+/* -------------------------------------------------------------------- */
+/* =================================================================== */
+/* ------------------------services-pack page------------------------ */
+.silver-pack {
+    border-radius: 10px;
+    /* background: linear-gradient(45deg, #dabd9ad5, #2c3e50); */
+    margin: 5px auto !important;
+}
+
+.silver-pack h2 {
+    text-align: center;
+    color: white !important;
+    text-shadow: 0 0 5px orange;
+    font-size: 35px;
+}
+
+.silver-pack p {
+    text-align: center;
+    color: white;
+    margin-top: -10px;
+}
+
+.silver-pack-content {
+    border: 3px solid white;
+    padding: 10px 30px;
+    margin: 5%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+    background: linear-gradient(45deg, #dabd9ad5, #2c3e50c4);
+}
+
+.silver-pack-content h4 {
+    color: rgba(235, 236, 238, 0.965);
+    text-shadow: 0 0 5px orange;
+}
+
+.silver-pack-content span {
+    color: white;
+}
+
+.silver-pack-content ul {
+    padding: 20px 30px;
+}
+
+.silver-pack-content ul li {
+    line-height: 30px;
+    color: rgb(18, 23, 1);
+}
+
+.silver-img img {
+    height: 50%;
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 30%;
+    margin-left: 5%;
+    transition: .5s;
+    box-shadow: 0 0 10px white;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.menu-container {
+    padding: 10px !important;
+}
+
+.menu-container .page ul li {
+    list-style: none;
+    color: rgb(192, 189, 189);
+}
+
+.menu-container .page .limit-note {
+    color: white;
+}
+
+/* -------------------------------------------------------------------- */
+/* =================================================================== */
+/* ------------------------event-page------------------------ */
+.wedding-event-container {
+    width: 96% !important;
+    border: 2px solid;
+    border-left: none;
+    border-right: none;
+    margin: 5px 5px;
+    padding: 5px 10px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    color: rgba(2, 49, 14, 0.944);
+    box-shadow: 0 0 5px;
+    background: linear-gradient(45deg, #f1bb79, #2c3e50);
+}
+
+.wedding-event-container h2 {
+    text-shadow: 0 0 5px orange;
+    font-size: 40px;
+}
+
+.wedding-event-container h6 {
+    border: 2px solid rgb(196, 196, 166);
+    width: 35% !important;
+    padding: 20px 25px;
+    color: rgb(225, 225, 225);
+    text-align: left;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    margin-left: 30px;
+    background-color: #f1bb79;
+}
+
+.wedding-event-container h6 a {
+    text-decoration: none;
+    font-size: 20px;
+
+    &:hover {
+        color: rgb(171, 166, 166);
+    }
+}
+
+.wedding-image-content {
+    background: linear-gradient(45deg, #2c3e50, #f1bb79);
+}
+
+.services-img {
+    margin-top: 100px !important;
+}
+
+.wedding-image-content .services-text h3 {
+    text-shadow: 0 0 10px orange;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.wedding-image-content .services-text .event-text-right {
+    font-size: 15px !important;
+    font-weight: 500;
+    color: rgb(50, 35, 1);
+    text-align: right !important;
+}
+
+.wedding-image-content .services-text p {
+    text-align: justify !important;
+    font-size: 13px !important;
+    color: rgb(241, 239, 239);
+}
+
+.wedding-event-manu-box {
+    border: 2px solid;
+    border-left: none;
+    border-right: none;
+    padding: 20px 0px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    text-align: center;
+    color: rgba(252, 254, 253, 0.944);
+    box-shadow: 0 0 5px;
+    background: linear-gradient(25deg, #f1bb7974, #2c3e50, #f1bb7967, #2c3e50);
+}
+
+.wedding-event-manu-box h2 {
+    text-shadow: 0 0 10px orange;
+    text-decoration: underline;
+}
+
+.wedding-event-manu-box p {
+    font-size: 25px;
+}
+
+.wedding-image-content {
+    padding: 20px 0 0 0;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+}
+
+
+.menu-btn11 {
+    border: 2px solid orange;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: .6s;
+    margin: 15px 35% !important;
+}
+
+.menu-btn11:hover {
+    background-color: rgba(188, 163, 117, 0.568);
+    box-shadow: 0 0 5px;
+    color: white;
+}
+
+/* -------------------main manu content------------------- */
+.menu-container {
+    max-width: 950%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 0px 20px;
+}
+
+.page h2 {
+    text-align: left;
+    color: #e4efe6;
+    border-bottom: 2px solid rgb(208, 205, 205);
+}
+
+/* ----------------------------------------------- */
+.page {
+    text-align: left;
+    width: 100%;
+    position: relative;
+}
+
+.page .limit-note {
+    text-align: left;
+    padding: 5px;
+    font-size: 15px;
+    color: rgba(50, 47, 47, 0.786);
+}
+
+.services-img img {
+    margin-top: 80px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pagination button {
+    background: linear-gradient(90deg, #182029, #845b1e);
+    padding: 5px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.actions button {
+    background: linear-gradient(90deg, #182029, #845b1e);
+    padding: 5px;
+    color: white;
+    margin: 10px 46%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+/* ====================================================================================== */
+/* ---------------------------------------feedback--------------------------------------- */
+.feedback {
+    padding: 20px 0px;
+    margin: 10px auto;
+    box-shadow: 0 0 5px;
+}
+
+.feedback p {
+    margin-top: -10px;
+    text-align: center;
+    color: rgb(196, 194, 194);
+}
+
+.feedback .feedback-form {
+    width: 70%;
+    margin: 10px auto;
+    border: 2px solid rgb(226, 148, 14);
+    padding: 10px;
+    box-shadow: 0 0 5px;
+    border-radius: 20px;
+    outline: 1px solid white;
+}
+
+.feedback-form label {
+    font-weight: bold;
+    color: rgb(248, 246, 246);
+    padding: 0px 10px;
+}
+
+.feedback-form input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(248, 244, 244);
+    border-radius: 20px;
+    padding: 5px 20px;
+    outline: none;
+}
+
+.feedback-form input::placeholder {
+    color: rgb(213, 204, 204);
+}
+
+.feedback-form .rating {
+    display: flex;
+    justify-content: space-between;
+    width: 30% !important;
+    margin: 10px 0;
+}
+
+.feedback-form .rating input {
+    display: none;
+}
+
+.feedback-form .rating label {
+    font-size: 28px;
+    color: #f0ce09;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.feedback-form .rating input:checked~label,
+.rating label:hover,
+.rating label:hover~label {
+    color: rgb(241, 236, 213);
+}
+
+.feedback-form textarea {
+    width: 100%;
+    padding: 0px 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: none;
+    border-bottom: 2px solid rgb(248, 244, 244);
+    outline: none;
+}
+
+.feedback-form button {
+    width: 100%;
+    padding: 12px;
+    background: #ecaf3660;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.feedback-form button:hover {
+    background: transparent;
+    outline: 1px solid rgb(73, 47, 2);
+}
+
+/* ----------------------------popup-box---------------------------- */
+/* Popup background */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(247, 209, 128, 0.374);
+    display: none;
+    /* Default hidden */
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+/* Popup box */
+.popup-box {
+    background: #5e3f02e0;
+    padding: 5px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.popup-box img {
+    height: 80px;
+    border-radius: 50%;
+}
+
+.popup-box h2 {
+    font-size: 18px;
+}
+
+.popup-box p {
+    color: floralwhite;
+    font-size: 15px;
+}
+
+.popup-box button {
+    padding: 5px 20px;
+    background: #9e7f04;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-box button:hover {
+    background: #e6d305;
+}
+
+/* ------------------///////////gallery content------------------/////////// */
+.gallery-box .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-content {
+    position: relative;
+}
+
+.gallery-content video {
+    width: 280px;
+    height: 160px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    margin: 10px 0px;
+    opacity: 0.1;
+    transition: .8s;
+    box-shadow: 0 0 5px;
+
+    &:hover {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+.gallery-content img {
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    margin: 10px 0px;
+    height: 200px;
+    transition: .5s;
+    opacity: 0.1;
+    box-shadow: 0 0 5px;
+
+    &:hover {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+.gallery-content span {
+    position: absolute;
+    content: ' ';
+    color: rgb(244, 243, 242);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px 5px;
+    margin: 150px -250px;
+}
+
+.gallery-content:hover span {
+    display: none !important;
+}
